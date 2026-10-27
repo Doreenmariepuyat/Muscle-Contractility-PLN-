@@ -1,0 +1,4 @@
+Gene symbol: PLN
+NCBI Gene ID: 5350
+Official name: phospholamban
+Chromosome: 6
