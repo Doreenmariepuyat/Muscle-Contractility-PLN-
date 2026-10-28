@@ -154,7 +154,7 @@ A useful follow-up experiment would compare cardiac cells expressing normal phos
 2. **NCBI RefSeq transcript NM_002667.5:** https://www.ncbi.nlm.nih.gov/nuccore/NM_002667.5
 3. **NCBI RefSeq protein NP_002658.1:** https://www.ncbi.nlm.nih.gov/protein/NP_002658.1
 4. **NCBI ClinVar, Variation ID 44580:** https://www.ncbi.nlm.nih.gov/clinvar/variation/44580/
-5. Haghighi, K. et al. (2006). A mutation in the human phospholamban gene, deleting arginine 14, results in lethal, hereditary cardiomyopathy. *Proceedings of the National Academy of Sciences*. [Find article via PubMed](https://pubmed.ncbi.nlm.nih.gov/16432188/).
+5. Haghighi, K. et al. (2006). A mutation in the human phospholamban gene, deleting arginine 14, results in lethal, hereditary cardiomyopathy. *Proceedings of the National Academy of Sciences*. https://pubmed.ncbi.nlm.nih.gov/16432188/ 
 
 **Database access date:** [October 27, 2026]
 
