@@ -16,27 +16,7 @@
 
 ## 3. Methods
 
-### 3.1 Project Setup
 
-A project folder named `Muscle_Contractility_PLN` was created in RStudio. The project was organized into `data/`, `results/`, and `figures/` folders. The R packages `rentrez` and `ggplot2` were used for retrieving NCBI records and generating figures.
-
-### 3.2 Retrieval of the PLN Gene and Protein
-
-The human PLN gene record was retrieved from NCBI Gene using R and the `rentrez` package. The exact gene record was checked, and its Gene ID, official name, chromosome, and biological role were recorded in `results/gene_summary.txt`.
-
-The assigned transcript, NM_002667.5, was retrieved from NCBI Nucleotide. Its GenBank record was used to identify the corresponding RefSeq protein accession, NP_002658.1. The reference protein sequence was retrieved in FASTA format and saved as `data/PLN_protein.fasta`. The accession was recorded in `results/protein_accession.txt`.
-
-### 3.3 Amino-Acid Composition Analysis
-
-The reference protein FASTA sequence was read into R. The protein length and the frequencies of the 20 standard amino acids were calculated. The results were saved in `results/amino_acid_composition.csv`. A bar chart was generated using ggplot2 and saved as `figures/01_amino_acid_composition.png`.
-
-### 3.4 ClinVar Variant Verification
-
-The assigned variant was examined using NCBI ClinVar, Variation ID 44580. The variant description, protein change, variant class, associated conditions, clinical classification, review status, and available supporting evidence were reviewed. The database access date was recorded.
-
-### 3.5 Protein Position Mapping
-
-A linear protein map was generated in R using ggplot2. The figure displayed the full reference PLN protein length and marked amino-acid position 14, the position affected by p.Arg14del. The figure was saved as `figures/02_variant_position.png`.
 
 ## Results
 
@@ -61,33 +41,27 @@ The reference protein sequence contained 52 amino acids. Based on the generated 
 
 Other amino acids were present at lower frequencies, and some standard amino acids had zero counts in the reference sequence.
 
+![Figure 1: PLN amino-acid composition](figures/01_amino_acid_composition.png)
+
 **Figure 1. Amino-acid composition of the human PLN reference protein.**
 
 The bar chart shows the number of occurrences of each of the 20 standard amino acids in the 52-amino-acid reference phospholamban sequence, NP_002658.1. Leucine was the most frequent amino acid, followed by isoleucine and glutamine. This chart describes the sequence composition but does not independently establish the protein's function or the effect of the assigned variant.
-
-![Figure 1: PLN amino-acid composition](figures/01_amino_acid_composition.png)
 
 ### Variant Position
 
 The assigned p.Arg14del variant affects arginine at amino-acid position 14 of the reference PLN protein. It is an in-frame deletion, meaning that the deletion does not shift the downstream reading frame.
 
+![Figure 2: PLN p.Arg14del protein-position map](figures/02_variant_position.png)
+
 **Figure 2. Linear protein map showing the position affected by PLN p.Arg14del.**
 
 The gray line represents the full-length reference PLN protein of 52 amino acids. The red marker identifies position 14, where arginine is deleted in the assigned variant. This map shows the affected position on the reference sequence and does not independently demonstrate a change in protein structure or function.
 
-![Figure 2: PLN p.Arg14del protein-position map](figures/02_variant_position.png)
+## Second Biological Visualization
 
-### ClinVar Findings
+<img width="770" height="502" alt="image" src="https://github.com/user-attachments/assets/ed0002df-99c0-4e7c-9bea-e23c4ad59b52" />
 
-- **ClinVar Variation ID:** 44580
-- **Variant:** p.Arg14del (R14del)
-- **Variant class:** In-frame deletion
-- **Aggregate germline classification:** Pathogenic
-- **Aggregate review status:** Criteria provided, multiple submitters, no conflicts
-- **Associated conditions reported:** Dilated cardiomyopathy and other cardiomyopathy-related conditions
-- **Database accessed:** [Enter your access date]
-
-ClinVar includes reports of affected individuals, family segregation, and functional studies supporting a disease association. The exact evidence and classification should be interpreted using the current record and its linked publications.
+**Figure 3. Linear protein map of human phospholamban (PLN) showing the location of the p.Arg14del variant. The reference PLN protein (NP_002658.1) contains 52 amino acids. The red marker indicates the in-frame deletion of arginine at position 14.**
 
 ## Discussion
 
@@ -117,5 +91,4 @@ A useful follow-up experiment would compare cells expressing wild-type PLN with 
 
 <img width="848" height="175" alt="image" src="https://github.com/user-attachments/assets/25964917-3622-42a6-a8a5-6446eaf82b51" />
 
-<img width="770" height="502" alt="image" src="https://github.com/user-attachments/assets/ed0002df-99c0-4e7c-9bea-e23c4ad59b52" />
 
